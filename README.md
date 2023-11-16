@@ -1,8 +1,8 @@
-# forkify Project
+# Forkify Project
 
 Recipe application with custom recipe uploads
 
-# Searchable iterms
+# Searchable Items
 
 carrot
 broccoli
