@@ -1,4 +1,4 @@
-import View from './View.js';
+import View from './view.js';
 import { async } from 'regenerator-runtime';
 import icons from 'url:../../img/icons.svg'; // Parcel 2
 // import { FORM_TIMEOUT_SEC } from '../config.js';
@@ -105,12 +105,10 @@ class AddRecipeView extends View {
 
   addHandlerUpload(handler) {
     this._parentElement.addEventListener('submit', function (e) {
-
-        e.preventDefault();
-        const dataArr = [...new FormData(this)];
-        const data = Object.fromEntries(dataArr);
-        handler(data);
-
+      e.preventDefault();
+      const dataArr = [...new FormData(this)];
+      const data = Object.fromEntries(dataArr);
+      handler(data);
     });
   }
 

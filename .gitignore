@@ -1,5 +1,3 @@
 node_modules
-src
 .parcel-cache
-src/js
-index.html
+dist
